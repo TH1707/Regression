@@ -31,4 +31,4 @@ if st.button('Submit'):
 	model=base_model()
 	preds=model.predict(df)
 	predictions=preds[0]
-		st.write(predictions)
+	st.write(predictions)
