@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import pandas as pd
-import joblib 
+import joblib
 
 # Define the heading style as HTML
 heading_style = '''
@@ -22,7 +22,7 @@ def return_df(tv, radio, newspaper):
 
 # Define a function to load the trained model
 def base_model():
-    model = jb.load('finalized_model_regression.pkl')
+    model = joblib.load('finalized_model_regression.pkl')
     return model
 
 # Streamlit UI
