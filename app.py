@@ -8,10 +8,10 @@ heading_style = '''
 <h1>Loan Amount Prediction System</h1>
 </div>
 '''
-def return_df(tv,radio,newspaper)
+def return_df(tv,radio,newspaper):
     kbn={
- 'tv':[tv]
- 'radio':[radio]
+ 'tv':[tv],
+ 'radio':[radio],
  'newspaper':[newspaper]
  }
 final_df=pd.DataFrame(kbn)
@@ -24,7 +24,7 @@ def base_model():
 st.markdown(heading_style, unsafe_allow_html=True)
 tv=st.number_input('How Much Money Was Spent On tv')
 radio=st.number_input('How much money was spent on radio')
-newspaper=st.number_input("How much money was spent on newspaper')
+newspaper=st.number_input('How much money was spent on newspaper')
 df=return_df(tv,radio,newspaper)
     
 if st.button('Submit'):
