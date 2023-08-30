@@ -10,10 +10,11 @@ heading_style = '''
 '''
 def return_df(tv,radio,newspaper):
     kbn={
- 'tv':[tv],
- 'radio':[radio],
- 'newspaper':[newspaper]
- }
+	    'tv':[tv],
+	    'radio':[radio],
+	    'newspaper':[newspaper]
+	    
+    }
 final_df=pd.DataFrame(kbn)
 return final_df
 
