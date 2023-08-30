@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import pandas as pd
-import joblib as jb
+import joblib 
 
 # Define the heading style as HTML
 heading_style = '''
